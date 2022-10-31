@@ -83,5 +83,15 @@ Console.WriteLine("===========Task 7 ==============");
 Console.WriteLine($"result: {romanResult_1}"); // 58
 Console.WriteLine($"result: {romanResult_2}"); // 1994
 
+/*Task 8*/
+Parentheses parentheses = new();
+var isValidBrackets_1 = parentheses.IsValid("()[]{}");
+var isValidBrackets_2 = parentheses.IsValid("([])");
+var isValidBrackets_3 = parentheses.IsValid(")(){}");
+Console.WriteLine("===========Task 8 ==============");
+Console.WriteLine($"result: {isValidBrackets_1}"); // true
+Console.WriteLine($"result: {isValidBrackets_2}"); // true
+Console.WriteLine($"result: {isValidBrackets_3}"); // false
+
 
 
