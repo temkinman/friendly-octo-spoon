@@ -58,4 +58,30 @@ var plusOneResult = one.GetPlusOne(nums_5);
 Console.WriteLine("===========Task 5 ==============");
 Console.WriteLine(string.Join(", ", plusOneResult)); // [1,0,0]
 
+/*Task 6*/
+var nums_6 = new []{7,1,5,3,6,4};
+var nums_6_2 = new []{7,6,4,3,1};
+var nums_6_3 = new []{2,4,1};
+BestTimeBuyAndSellStock stock = new();
+
+var stockResult_1 = stock.MaxProfit(nums_6);
+var stockResult_2 = stock.MaxProfit(nums_6_2);
+var stockResult_3 = stock.MaxProfit(nums_6_3);
+Console.WriteLine("===========Task 6 ==============");
+Console.WriteLine($"result: {stockResult_1}"); // 5
+Console.WriteLine($"result: {stockResult_2}"); // 0
+Console.WriteLine($"result: {stockResult_3}"); // 2
+
+/*Task 7*/
+string nums_7 = "LVIII";
+string nums_7_2 = "MCMXCIV";
+RomanToInt roman = new();
+
+var romanResult_1 = roman.GetRomanToInt(nums_7);
+var romanResult_2 = roman.GetRomanToInt(nums_7_2);
+Console.WriteLine("===========Task 7 ==============");
+Console.WriteLine($"result: {romanResult_1}"); // 58
+Console.WriteLine($"result: {romanResult_2}"); // 1994
+
+
 
