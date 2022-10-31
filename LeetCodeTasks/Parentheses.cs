@@ -12,7 +12,8 @@ Every close bracket has a corresponding open bracket of the same type.
 public class Parentheses
 {
     private Stack<char> _state = new();
-    private readonly HashSet<char> _openedBrackets = new() { '(','[','{' };
+    private readonly List<char> _openedBrackets = new() { '(','[','{' };
+    private readonly List<char> _allBrackets = new() { '(',')','[',']','{','}' };
     
     private readonly Dictionary<char, char> _pairBrackets = new()
     {
@@ -23,13 +24,18 @@ public class Parentheses
     
     public bool IsValid(string s)
     {
-        if (s.Length == 0 || s.Length == 1)
+        if (s.Length < 2)
         {
             return false;
         }
         
         for (int i = 0; i < s.Length; i++)
         {
+            if (!_allBrackets.Contains(s[i]))
+            {
+                continue;
+            }
+            
             if (_openedBrackets.Contains(s[i]))
             {
                 _state.Push(s[i]);
@@ -41,13 +47,10 @@ public class Parentheses
                     return false;
                 }
                 
-                if (_pairBrackets.TryGetValue(_state.Pop(), out char closedBracket))
+                if (s[i] != _pairBrackets[_state.Pop()])
                 {
-                    if (s[i] != closedBracket)
-                    {
-                        return false;
-                    }
-                }    
+                    return false;
+                }
             }
         }
         

@@ -88,10 +88,12 @@ Parentheses parentheses = new();
 var isValidBrackets_1 = parentheses.IsValid("()[]{}");
 var isValidBrackets_2 = parentheses.IsValid("([])");
 var isValidBrackets_3 = parentheses.IsValid(")(){}");
+var isValidBrackets_4 = parentheses.IsValid("({aab})");
 Console.WriteLine("===========Task 8 ==============");
 Console.WriteLine($"result: {isValidBrackets_1}"); // true
 Console.WriteLine($"result: {isValidBrackets_2}"); // true
 Console.WriteLine($"result: {isValidBrackets_3}"); // false
+Console.WriteLine($"result: {isValidBrackets_4}"); // false
 
 /*Task 9*/
 ValidAnagram anagram = new ValidAnagram();
