@@ -93,5 +93,13 @@ Console.WriteLine($"result: {isValidBrackets_1}"); // true
 Console.WriteLine($"result: {isValidBrackets_2}"); // true
 Console.WriteLine($"result: {isValidBrackets_3}"); // false
 
+/*Task 9*/
+ValidAnagram anagram = new ValidAnagram();
+var isValidAnagram_1 = anagram.IsAnagram("anagram", "nagaram");
+var isValidAnagram_2 = anagram.IsAnagram("rat", "car");
+
+Console.WriteLine("===========Task 9 ==============");
+Console.WriteLine($"result: {isValidAnagram_1}"); // true
+Console.WriteLine($"result: {isValidAnagram_2}"); // false
 
 
