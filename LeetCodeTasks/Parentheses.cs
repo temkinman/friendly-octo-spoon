@@ -42,12 +42,7 @@ public class Parentheses
             }
             else
             {
-                if (_state.Count == 0)
-                {
-                    return false;
-                }
-                
-                if (s[i] != _pairBrackets[_state.Pop()])
+                if (_state.Count == 0 || s[i] != _pairBrackets[_state.Pop()])
                 {
                     return false;
                 }
