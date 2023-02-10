@@ -113,7 +113,7 @@ Console.WriteLine($"result: {isValidAnagram_1}"); // true
 Console.WriteLine($"result: {isValidAnagram_2}"); // false
 
 */
-
+/*
 Console.WriteLine("=========== LongestCommonPrefix ==============");
 string[] strs = { "flower", "flow", "flight" };
 string prefix = LongestCommonPrefix.GetLongestPrefix(strs);
@@ -130,3 +130,21 @@ Console.WriteLine(prefix_3);
 string[] str4 = { "", "ac" };
 string prefix_4 = LongestCommonPrefix.GetLongestPrefix(str4);
 Console.WriteLine(prefix_4);
+*/
+
+Console.WriteLine("");
+Console.WriteLine("=========== Merge Two Sorted Lists ==============");
+int[] list1 = { 1, 2, 4 },
+    list2 = { 1, 3, 4 };
+var mergedLists_1 = MergeTwoSortedLists.MergeArrays(list1, list2);
+Console.WriteLine(string.Join(" ", mergedLists_1));
+
+int[] list3 = { 1, 4 },
+    list4 = { 1, 3, 4 };
+var mergedLists_2 = MergeTwoSortedLists.MergeArrays(list3, list4);
+Console.WriteLine(string.Join(" ", mergedLists_2));
+
+int[] list5 = { },
+    list6 = { };
+var mergedLists_3 = MergeTwoSortedLists.MergeArrays(list5, list6);
+Console.WriteLine(string.Join(" ", mergedLists_3));
