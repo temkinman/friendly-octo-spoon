@@ -150,9 +150,16 @@ int[] list5 = { },
 var mergedLists_3 = MergeTwoSortedLists.MergeArrays(list5, list6);
 Console.WriteLine(string.Join(" ", mergedLists_3));
 */
-
+/*
 Console.WriteLine("=========== Sorting Array ==============");
 int[] unsorted = { 11, 4, -3, -45 };
 Console.WriteLine(string.Join(" ", unsorted));
 int[] sorted = SortArray.SortArrayFromMinToMax(unsorted);
 Console.WriteLine(string.Join(" ", sorted));
+*/
+
+Console.WriteLine("=========== Length of Last Word ==============");
+
+string s = "   fly me   to   the moon  ";
+int length = LengthLastWord.GetLengthOfLastWord(s);
+Console.WriteLine(length);
