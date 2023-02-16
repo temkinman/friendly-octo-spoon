@@ -132,24 +132,32 @@ string prefix_4 = LongestCommonPrefix.GetLongestPrefix(str4);
 Console.WriteLine(prefix_4);
 */
 
-/*
+
 Console.WriteLine("");
 Console.WriteLine("=========== Merge Two Sorted Lists ==============");
 int[] list1 = { 1, 2, 4 },
-    list2 = { 1, 3, 4 };
-var mergedLists_1 = MergeTwoSortedLists.MergeArrays(list1, list2);
-Console.WriteLine(string.Join(" ", mergedLists_1));
+    list2 = { 1, 3, 4, 9, 16 };
+//var mergedLists_1 = MergeTwoSortedLists.MergeArrays(list1, list2);
+//Console.WriteLine(string.Join(" ", mergedLists_1));
 
+//var mergedLists_2 = MergeTwoSortedLists.MergeArraysMyVersion(list1, list2);
+//Console.WriteLine(string.Join(" ", mergedLists_2));
+
+var mergedLists_3 = MergeTwoSortedLists.MergeArraysSimpleVersion(list1, list2);
+Console.WriteLine(string.Join(" ", mergedLists_3));
+
+/*
 int[] list3 = { 1, 4 },
-    list4 = { 1, 3, 4 };
+    list4 = { 1, 3, 4, -3 };
 var mergedLists_2 = MergeTwoSortedLists.MergeArrays(list3, list4);
 Console.WriteLine(string.Join(" ", mergedLists_2));
-
-int[] list5 = { },
-    list6 = { };
-var mergedLists_3 = MergeTwoSortedLists.MergeArrays(list5, list6);
-Console.WriteLine(string.Join(" ", mergedLists_3));
 */
+
+//int[] list5 = { },
+//    list6 = { };
+//var mergedLists_3 = MergeTwoSortedLists.MergeArrays(list5, list6);
+//Console.WriteLine(string.Join(" ", mergedLists_3));
+
 /*
 Console.WriteLine("=========== Sorting Array ==============");
 int[] unsorted = { 11, 4, -3, -45 };
@@ -158,8 +166,39 @@ int[] sorted = SortArray.SortArrayFromMinToMax(unsorted);
 Console.WriteLine(string.Join(" ", sorted));
 */
 
+/*
 Console.WriteLine("=========== Length of Last Word ==============");
 
 string s = "   fly me   to   the moon  ";
 int length = LengthLastWord.GetLengthOfLastWord(s);
 Console.WriteLine(length);
+*/
+
+
+//Console.WriteLine("=========== Add binary ==============");
+//string a1 = "11", b1 = "1"; // Output: "100"
+//string a2 = "1010", b2 = "1011"; // Output: "10101"
+
+//string a = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
+//string b = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011";
+//string expected = "110111101100010011000101110110100000011101000101011001000011011000001100011110011010010011000000000";
+
+//string resAdd_1 = AddBinary.GetAddBinary(a1, b1);
+//string resAdd_2 = AddBinary.GetAddBinary(a2, b2);
+//string resAdd_3 = AddBinary.GetAddBinary(a, b);
+
+//Console.WriteLine(resAdd_1);
+//Console.WriteLine(resAdd_2);
+//Console.WriteLine(expected == resAdd_3);
+
+//Abstraction abstraction = new AbstractionChild();
+//abstraction.Name = "sadad";
+
+//abstraction.Move();
+
+//IPlyaing pl = new Player();
+
+//Testlocker.LockerRun();
+//Testlocker.TestLockWithString();
+
+//ParallelLinq.ParallelSum();
