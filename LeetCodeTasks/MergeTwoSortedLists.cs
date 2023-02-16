@@ -15,37 +15,95 @@ namespace LeetCodeTasks
     {
         public static int[] MergeArrays(int[] first, int[] second)
         {
-            int size = first.Length + second.Length;
-            int[] result = new int[size];
+            int n1 = first.Length;
+            int n2 = second.Length;
+            int[] result = new int[n1 + n2];
 
             int i = 0;
             int j = 0;
             int ind = 0;
 
-            while (i < first.Length || j < second.Length)
+            while(i < n1)
             {
-                if (first[i] == second[j])
-                {
-                    result[ind++] = first[i++];
-                    result[ind++] = second[j++];
-                    continue;
-                }
+                result[ind++] = first[i++];
+            }
 
-                if (first[i] < second[i])
+            while(j < n2)
+            {
+                result[ind++] = second[j++];
+            }
+
+            Array.Sort(result);
+
+            for (int k = 1; k < result.Length; k++)
+            {
+                for (int m = 0; m < result.Length - k; m++)
                 {
-                    while (first[i] < second[j])
+                    if(result[m + 1] < result[m])
                     {
-                        result[ind++] = first[i++];
-                    }
-                }
-                else
-                {
-                    while (first[i] > second[j])
-                    {
-                        result[ind++] = second[j++];
+                        (result[m], result[m + 1]) = (result[m + 1], result[m]);
                     }
                 }
             }
+
+            return result;
+        }
+
+        public static int[] MergeArraysMyVersion(int[] first, int[] second)
+        {
+            int n1 = first.Length;
+            int n2 = second.Length;
+            int[] result = new int[n1 + n2];
+
+            int i = 0;
+            int j = 0;
+
+            for (int index = 0; index < result.Length; index++)
+            {
+                if (i == first.Length && j < second.Length)
+                {
+                    while (j < second.Length)
+                    {
+                        result[index++] = second[j++];
+                    }
+
+                    if (j == second.Length) break;
+                }
+
+                if (j == second.Length && i < first.Length)
+                {
+                    while (i < first.Length)
+                    {
+                        result[index++] = first[i++];
+                    }
+                    if (i == first.Length) break;
+                }
+
+                if (first[i] < second[j])
+                {
+                    result[index] = first[i++];
+                }
+                else if (first[i] == second[j])
+                {
+                    result[index++] = first[i++];
+                    result[index] = second[j++];
+                }
+                else
+                {
+                    result[index] = second[j++];
+                }
+            }
+
+            return result;
+        }
+
+        public static int[] MergeArraysSimpleVersion(int[] first, int[] second)
+        {
+            int n1 = first.Length;
+            int n2 = second.Length;
+            int[] result = first.Concat(second).ToArray();
+
+            Array.Sort(result);
 
             return result;
         }
