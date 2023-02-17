@@ -133,18 +133,18 @@ Console.WriteLine(prefix_4);
 */
 
 
-Console.WriteLine("");
-Console.WriteLine("=========== Merge Two Sorted Lists ==============");
-int[] list1 = { 1, 2, 4 },
-    list2 = { 1, 3, 4, 9, 16 };
-//var mergedLists_1 = MergeTwoSortedLists.MergeArrays(list1, list2);
-//Console.WriteLine(string.Join(" ", mergedLists_1));
+//Console.WriteLine("");
+//Console.WriteLine("=========== Merge Two Sorted Lists ==============");
+//int[] list1 = { 1, 2, 4 },
+//    list2 = { 1, 3, 4, 9, 16 };
+////var mergedLists_1 = MergeTwoSortedLists.MergeArrays(list1, list2);
+////Console.WriteLine(string.Join(" ", mergedLists_1));
 
-//var mergedLists_2 = MergeTwoSortedLists.MergeArraysMyVersion(list1, list2);
-//Console.WriteLine(string.Join(" ", mergedLists_2));
+////var mergedLists_2 = MergeTwoSortedLists.MergeArraysMyVersion(list1, list2);
+////Console.WriteLine(string.Join(" ", mergedLists_2));
 
-var mergedLists_3 = MergeTwoSortedLists.MergeArraysSimpleVersion(list1, list2);
-Console.WriteLine(string.Join(" ", mergedLists_3));
+//var mergedLists_3 = MergeTwoSortedLists.MergeArraysSimpleVersion(list1, list2);
+//Console.WriteLine(string.Join(" ", mergedLists_3));
 
 /*
 int[] list3 = { 1, 4 },
@@ -202,3 +202,6 @@ Console.WriteLine(length);
 //Testlocker.TestLockWithString();
 
 //ParallelLinq.ParallelSum();
+
+
+MergeNames.MergeNamesRun();
