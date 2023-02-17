@@ -204,4 +204,14 @@ Console.WriteLine(length);
 //ParallelLinq.ParallelSum();
 
 
-MergeNames.MergeNamesRun();
+//MergeNames.MergeNamesRun();
+
+//int srtNumber = MySqrt.Sqrt(8); // should be 2
+//Console.WriteLine($"MySqrt from 8 is {srtNumber}");
+
+int steps = ClimbStairs.ClimbStairsRun(4); //  5
+Console.WriteLine($"steps for 4 is {steps}");
+
+int recursiaSteps = ClimbStairs.ClimbStairsRecoursRun(4); //  5
+Console.WriteLine($"steps for 4 is {recursiaSteps}");
+
