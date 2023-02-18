@@ -2,7 +2,7 @@
 
 /*Task 1*/
 /*
-TwoSum twoSum = new TwoSum();
+/*TwoSum twoSum = new TwoSum();
 
 var twoSumResult_1 = twoSum.GetTwoSum(new int[]{3,2,4}, 6); // 1, 2
 var twoSumResult_2 = twoSum.GetTwoSum(new int[]{ 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1 }, 11); // 5, 11
@@ -12,8 +12,7 @@ Console.WriteLine(string.Join(", ", twoSumResult_1));
 Console.WriteLine(string.Join(", ", twoSumResult_2));
 */
 /*Task 2*/
-/*
-RemoveElement removeElement = new();
+/*RemoveElement removeElement = new();
 var nums_1 = new []{ 0, 1, 2, 2, 3, 0, 4, 2 };
 
 Console.WriteLine("===========Task 2 ==============");
@@ -48,7 +47,7 @@ var nums_4 = new []{1,3,5,6};
 InsertPosition insertPosition = new();
 var insPosResult_1 = insertPosition.SearchInsert(nums_4, 2);
 var insPosResult_2 = insertPosition.SearchInsert(nums_4, 5);
-    
+
 Console.WriteLine("===========Task 4 ==============");
 Console.WriteLine($"result: {insPosResult_1}"); // 1
 Console.WriteLine($"result: {insPosResult_2}"); // 2
@@ -56,7 +55,6 @@ Console.WriteLine($"result: {insPosResult_2}"); // 2
 /*Task 5*/
 // var nums_5 = new []{5,2,2,6,5,7,1,9,0,3,8,6,8,6,5,2,1,8,7,9,8,3,8,4,7,2,5,8,9};
 /*
-var nums_5 = new []{9, 9, 9}; 
 PlusOne one = new();
 var plusOneResult = one.GetPlusOne(nums_5);
 
@@ -215,3 +213,31 @@ Console.WriteLine($"steps for 4 is {steps}");
 int recursiaSteps = ClimbStairs.ClimbStairsRecoursRun(4); //  5
 Console.WriteLine($"steps for 4 is {recursiaSteps}");
 
+/*
+int[,] grid_1 = new int[3,3]
+{
+    { 1, 0, 1 },
+    { 0, 0, 0 },
+    { 1, 0, 1 },
+};
+
+int distance = Land_Possible.GetDistance(grid_1);
+Console.WriteLine($"distance: {distance}");
+*/
+
+//Console.WriteLine("=========== LongestCommonPrefix ==============");
+//string[] strs = { "flower", "flow", "flight" };
+//string prefix = LongestCommonPrefix.GetLongestPrefix(strs);
+//Console.WriteLine(prefix);
+
+//string[] str2 = { "flower","flower","flower","flower" };
+//string prefix_2 = LongestCommonPrefix.GetLongestPrefix(str2);
+//Console.WriteLine(prefix_2);
+
+string[] str3 = { "a", "ac", "ass" };
+string prefix_3 = LongestCommonPrefix.GetLongestPrefix(str3);
+Console.WriteLine(prefix_3);
+
+//string[] str4 = { "", "ac" };
+//string prefix_4 = LongestCommonPrefix.GetLongestPrefix(str4);
+//Console.WriteLine(prefix_4);
