@@ -207,11 +207,11 @@ Console.WriteLine(length);
 //int srtNumber = MySqrt.Sqrt(8); // should be 2
 //Console.WriteLine($"MySqrt from 8 is {srtNumber}");
 
-int steps = ClimbStairs.ClimbStairsRun(4); //  5
-Console.WriteLine($"steps for 4 is {steps}");
+//int steps = ClimbStairs.ClimbStairsRun(4); //  5
+//Console.WriteLine($"steps for 4 is {steps}");
 
-int recursiaSteps = ClimbStairs.ClimbStairsRecoursRun(4); //  5
-Console.WriteLine($"steps for 4 is {recursiaSteps}");
+//int recursiaSteps = ClimbStairs.ClimbStairsRecoursRun(4); //  5
+//Console.WriteLine($"steps for 4 is {recursiaSteps}");
 
 /*
 int[,] grid_1 = new int[3,3]
@@ -234,10 +234,35 @@ Console.WriteLine($"distance: {distance}");
 //string prefix_2 = LongestCommonPrefix.GetLongestPrefix(str2);
 //Console.WriteLine(prefix_2);
 
-string[] str3 = { "a", "ac", "ass" };
-string prefix_3 = LongestCommonPrefix.GetLongestPrefix(str3);
-Console.WriteLine(prefix_3);
+//string[] str3 = { "a", "ac", "ass" };
+//string prefix_3 = LongestCommonPrefix.GetLongestPrefix(str3);
+//Console.WriteLine(prefix_3);
 
 //string[] str4 = { "", "ac" };
 //string prefix_4 = LongestCommonPrefix.GetLongestPrefix(str4);
 //Console.WriteLine(prefix_4);
+
+
+//Console.WriteLine("=========== LongestCommonPrefix ==============");
+/*
+Example 1:
+Input: head = [1, 1, 2]
+Output: [1,2]
+
+Example 2:
+Input: head = [1, 1, 2, 3, 3]
+Output: [1,2,3]
+*/
+
+ListNode second = new ListNode(2);
+ListNode first = new ListNode(1, second);
+ListNode head = new ListNode(1, first);
+
+ListNode res = DeleteDuplicates.DeleteDuplicatesRun(head);
+
+do
+{
+    Console.WriteLine(res.val);
+    res = res.next;
+}
+while (res != null);
