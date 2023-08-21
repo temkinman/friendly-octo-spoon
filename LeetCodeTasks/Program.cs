@@ -242,7 +242,6 @@ Console.WriteLine($"distance: {distance}");
 //string prefix_4 = LongestCommonPrefix.GetLongestPrefix(str4);
 //Console.WriteLine(prefix_4);
 
-
 //Console.WriteLine("=========== LongestCommonPrefix ==============");
 /*
 Example 1:
@@ -253,6 +252,9 @@ Example 2:
 Input: head = [1, 1, 2, 3, 3]
 Output: [1,2,3]
 */
+
+/*
+Console.WriteLine("================DeleteDuplicates====================");
 
 ListNode second = new ListNode(2);
 ListNode first = new ListNode(1, second);
@@ -266,3 +268,12 @@ do
     res = res.next;
 }
 while (res != null);
+
+*/
+
+var res_1 = Find_Index_of_First_Occurrence_in_String.StrStr("sadbutsad", "sad");
+var res_2 = Find_Index_of_First_Occurrence_in_String.StrStr("leetcode", "leeto");
+var res_3 = Find_Index_of_First_Occurrence_in_String.StrStr("leetcodeleet", "eet");
+Console.WriteLine($"sadbutsad & sad (0) => {res_1}");
+Console.WriteLine($"leetcode & leeto (-1) => {res_2}");
+Console.WriteLine($"leetcodeleet & eet (1) => {res_3}");
