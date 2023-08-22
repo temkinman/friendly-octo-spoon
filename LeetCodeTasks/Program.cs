@@ -271,9 +271,25 @@ while (res != null);
 
 */
 
+/*
+Console.WriteLine("================Find_Index_of_First_Occurrence_in_String====================");
 var res_1 = Find_Index_of_First_Occurrence_in_String.StrStr("sadbutsad", "sad");
 var res_2 = Find_Index_of_First_Occurrence_in_String.StrStr("leetcode", "leeto");
 var res_3 = Find_Index_of_First_Occurrence_in_String.StrStr("leetcodeleet", "eet");
 Console.WriteLine($"sadbutsad & sad (0) => {res_1}");
 Console.WriteLine($"leetcode & leeto (-1) => {res_2}");
 Console.WriteLine($"leetcodeleet & eet (1) => {res_3}");
+*/
+
+Console.WriteLine("================MergeSortedArray====================");
+int[] nums1 = new int[] { 1, 2, 3, 0, 0, 0 };
+int[] nums2 = new int[] { 2, 5, 6 };
+int m = 3, n = 3;
+
+MergeSortedArray.Merge(nums1, m, nums2, n);
+
+for (int i = 0; i < nums1.Length; i++)
+{
+    Console.WriteLine($"el {i} = {nums1[i]}");
+}
+
