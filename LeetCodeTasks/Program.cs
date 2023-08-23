@@ -1,4 +1,5 @@
 ﻿using System.Net.Mail;
+using System.Xml.Linq;
 using LeetCodeTasks;
 
 /*Task 1*/
@@ -282,6 +283,7 @@ Console.WriteLine($"leetcode & leeto (-1) => {res_2}");
 Console.WriteLine($"leetcodeleet & eet (1) => {res_3}");
 */
 
+/*
 Console.WriteLine("================MergeSortedArray====================");
 int[] nums1 = new int[] { 1, 2, 3, 0, 0, 0 };
 int[] nums2 = new int[] { 2, 5, 6 };
@@ -310,3 +312,17 @@ foreach (var chunk in chunked)
 }
 
 bool res = MailAddress.TryCreate("sfsa@gfsdg.erg", out var email);
+*/
+
+//TreeNode tree = new TreeNode(2, new TreeNode(1), new TreeNode(3));
+TreeNode rightNode = new TreeNode(2, new TreeNode(3));
+TreeNode root = new TreeNode(1, null, rightNode);
+
+//TreeNode one = new TreeNode(1);
+
+var res = InorderTreeTraversal.InorderTraversal(root);
+
+foreach (var item in res)
+{
+    Console.WriteLine($"item: {item}");
+}
