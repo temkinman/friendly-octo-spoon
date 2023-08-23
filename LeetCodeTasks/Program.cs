@@ -1,4 +1,5 @@
-﻿using LeetCodeTasks;
+﻿using System.Net.Mail;
+using LeetCodeTasks;
 
 /*Task 1*/
 /*
@@ -293,3 +294,19 @@ for (int i = 0; i < nums1.Length; i++)
     Console.WriteLine($"el {i} = {nums1[i]}");
 }
 
+IEnumerable<int> nums = Enumerable.Range(0, 8).ToArray();
+var chunked = nums.Chunk(3);
+
+int ind = 0;
+foreach (var chunk in chunked)
+{
+    Console.WriteLine($"chunk #{++ind}");
+    foreach (var num in chunk)
+    {
+        Console.Write(num + " ");    
+    }
+
+    Console.WriteLine();
+}
+
+bool res = MailAddress.TryCreate("sfsa@gfsdg.erg", out var email);
